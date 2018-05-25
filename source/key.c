@@ -1,9 +1,13 @@
 /**
  * @Author: fjk
- * @Date:   2018-05-24T22:35:18+08:00
+ * @Date:   2018-05-24T22:57:03+08:00
+ * @Email:  sunnyfjk@mail.com
+ * @Filename: key.c
  * @Last modified by:   fjk
- * @Last modified time: 2018-05-24T22:54:04+08:00
+ * @Last modified time: 2018-05-25T20:36:32+08:00
+ * @License: GPLV3
  */
+
 #include <common.h>
 #include <key.h>
 /*
@@ -25,16 +29,16 @@ void key_init(void) {
 }
 int key_ops(void) {
   int ret = 0;
-  if (GPIOBPAD & (1 << 30))
+  if (!(GPIOBPAD & (1 << 30)))
     ret |= 1 << 1;
 
-  if (GPIOBPAD & (1 << 31))
+  if (!(GPIOBPAD & (1 << 31)))
     ret |= 1 << 2;
 
-  if (GPIOBPAD & (1 << 9))
+  if (!(GPIOBPAD & (1 << 9)))
     ret |= 1 << 3;
 
-  if (GPIOAPAD & (1 << 28))
+  if (!(GPIOAPAD & (1 << 28)))
     ret |= 1 << 0;
 
   return ret;

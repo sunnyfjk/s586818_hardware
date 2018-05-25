@@ -1,9 +1,13 @@
 /**
  * @Author: fjk
- * @Date:   2018-05-24T22:35:12+08:00
+ * @Date:   2018-05-24T22:57:03+08:00
+ * @Email:  sunnyfjk@mail.com
+ * @Filename: key.h
  * @Last modified by:   fjk
- * @Last modified time: 2018-05-24T22:46:01+08:00
+ * @Last modified time: 2018-05-25T20:31:22+08:00
+ * @License: GPLV3
  */
+
 #ifndef __KEY_H__
 #define __KEY_H__
 
@@ -14,7 +18,7 @@
 4 b9
 */
 #define GPIOBPAD (*((volatile unsigned int *)0xC001B018))
-#define GPIOBOUTENB (*((volatile unsigned int *)0xC001C004))
+#define GPIOBOUTENB (*((volatile unsigned int *)0xC001B004))
 #define GPIOB_PULLENB (*((volatile unsigned int *)0xC001B060))
 #define GPIOB_PULLENB_DISABLE_DEFAULT (*((volatile unsigned int *)0xC001B064))
 

@@ -1,9 +1,13 @@
 /**
  * @Author: fjk
- * @Date:   2018-05-24T22:08:53+08:00
+ * @Date:   2018-05-24T22:57:03+08:00
+ * @Email:  sunnyfjk@mail.com
+ * @Filename: led.c
  * @Last modified by:   fjk
- * @Last modified time: 2018-05-24T22:49:05+08:00
+ * @Last modified time: 2018-05-25T19:26:18+08:00
+ * @License: GPLV3
  */
+
 #include <common.h>
 #include <led.h>
 /*
